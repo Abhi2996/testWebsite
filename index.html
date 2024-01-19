@@ -25,6 +25,9 @@
             color: #fff;
             text-align: center;
             padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         nav a {
@@ -33,6 +36,11 @@
             margin: 0 15px;
             font-weight: bold;
             font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffc107; /* Change the color on hover as per your preference */
         }
 
         #container {
@@ -66,13 +74,10 @@
             color: #fff;
             text-align: center;
             padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
         }
 
         /* Media queries for responsiveness */
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: 800px) {
             nav {
                 flex-direction: column;
             }
@@ -84,6 +89,8 @@
 
             #container {
                 max-width: 100%;
+                box-sizing: border-box;
+                padding: 10px;
             }
         }
     </style>
@@ -141,11 +148,8 @@
                 Phone: 9342805076<br>
                 Email: <a href="mailto:suvkolyapvtltd@gmail.com">suvkolyapvtltd@gmail.com</a>
             </address>
-            
-            <!-- Placeholder for GST certificate images -->
-            <img src="assets/GSTCertificate_page_1.png" alt="GST Certificate 1">
-            <img src="assets/GSTCertificate_page_2.png" alt="GST Certificate 2">
-            <img src="assets/GSTCertificate_page_3.png" alt="GST Certificate 3">
+  <!-- Link to GST certificate page -->
+  <p>View our GST certificate: <a href="gst_certificate.html">GST Certificate</a></p>
         </section>
     </div>
 
