@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SUV KOLYA (OPC) PRIVATE LIMITED</title>
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -81,24 +83,6 @@
             margin: 10px 0;
             line-height: 1.5;
         }
-
-        /* Media queries for responsiveness */
-        @media only screen and (max-width: 800px) {
-            nav {
-                flex-direction: column;
-            }
-
-            nav a {
-                display: block;
-                margin: 10px 0;
-            }
-
-            #container {
-                max-width: 100%;
-                box-sizing: border-box;
-                padding: 10px;
-            }
-        }
     </style>
 </head>
 <body>
@@ -108,14 +92,32 @@
         <p>Empowering Success Through Exceptional Services</p>
     </header>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About Us</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">SUV KOLYA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <div id="container">
+    <div class="container mt-4">
         <section id="home">
             <h2>Welcome to SUV KOLYA (OPC) PRIVATE LIMITED</h2>
             <p>Discover excellence in tailored services at SUV KOLYA (OPC) PRIVATE LIMITED. We are your trusted partner in human resource consulting, management services, and construction and maintenance. With a commitment to delivering top-notch solutions, we bring expertise, innovation, and client-centric approaches to every project.</p>
@@ -171,5 +173,7 @@
         &copy; 2024 SUV KOLYA (OPC) PRIVATE LIMITED. All rights reserved.
     </footer>
 
+    <!-- Add Bootstrap JS and Popper.js scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
